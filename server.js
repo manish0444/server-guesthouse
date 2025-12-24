@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: ['https://krishendra-guest-house.vercel.app', 'https://krishendra-guest-house.vercel.app'] // Vite default ports
+  origin: ['http://localhost:8080', 'https://krishendra-guest-house.vercel.app'] // Vite default ports
 }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
